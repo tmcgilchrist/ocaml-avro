@@ -1,5 +1,6 @@
-(lang dune 2.7)
+(lang dune 3.6)
 (generate_opam_files true)
+(formatting disabled)
 (version 0.1)
 (maintainers "Simon Cruanes")
 (license MIT)
@@ -18,7 +19,7 @@
     (odoc :with-doc)
     (avro-compiler :with-test)
     (ocaml (>= 4.08.0))
-    camlzip))
+    (camlzip (>= 1.11))))
 
 (package
   (name avro-compiler)
